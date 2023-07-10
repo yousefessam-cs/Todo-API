@@ -20,8 +20,8 @@ public class StartUp implements CommandLineRunner {
     public void run(String... args) throws Exception {
         if(personService.findAll().isEmpty()){
             personService.insert(Person.builder()
-                    .name("mohamed")
-                    .username("moo")
+                    .name("yousef")
+                    .username("joe")
                     .password("123")
                     .build());
             personService.insert(Person.builder()
@@ -30,8 +30,8 @@ public class StartUp implements CommandLineRunner {
                     .password("123")
                     .build());
             personService.insert(Person.builder()
-                    .name("abdo")
-                    .username("bido")
+                    .name("David")
+                    .username("david")
                     .password("123")
                     .build());
         }
